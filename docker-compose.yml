@@ -1,0 +1,10 @@
+services:
+  agent:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env                         # your secrets — never committed
+    volumes:
+      - .:/app                       # live reload picks up code changes
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
