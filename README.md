@@ -3,6 +3,7 @@
 Automated email processing pipeline for B2B sales teams.
 Reads incoming emails from Outlook, classifies intent with GPT-4o mini, decides the next best action using a rules engine, checks compliance, writes a personalized reply, sends it, and logs the activity in Dynamics 365 CRM — all in one API call.
 
+<img width="1000" height="1914" alt="AutoSalesInbox_project_structure_v2(1)" src="https://github.com/user-attachments/assets/a518dad1-1c9a-4d07-b7d8-08c33be22d66" />
 ---
 
 ## Architecture
@@ -217,3 +218,6 @@ agent-email/
 - `__pycache__/` — compiled bytecode
 - `*.log` — runtime logs
 - `.coverage` / `htmlcov/` — test coverage reports
+
+
+
